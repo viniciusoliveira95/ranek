@@ -1,23 +1,26 @@
 <template>
   <section class="produtcts-container">
-    <div v-if="products && products.length" class="products">
-      <div class="product" v-for="(product, index) in products" :key="index">
-        <router-link to="/">
-          <img
-            v-if="product.photos"
-            :src="product.photos[0].src"
-            alt="product.photos[0].title"
-          />
-          <p class="price">{{ product.price }}</p>
-          <h2 class="title">{{ product.name }}</h2>
-          <p>{{ product.description }}</p>
-        </router-link>
+    <transition mode="out-in">
+      <div v-if="products && products.length" class="products" key="products">
+        <div class="product" v-for="(product, index) in products" :key="index">
+          <router-link to="/">
+            <img
+              v-if="product.photos"
+              :src="product.photos[0].src"
+              alt="product.photos[0].title"
+            />
+            <p class="price">{{ product.price }}</p>
+            <h2 class="title">{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+          </router-link>
+        </div>
+        <ProductsPagination :count="count" :perPage="perPage" />
       </div>
-      <ProductsPagination :count="count" :perPage="perPage" />
-    </div>
-    <div v-else-if="products && products.length === 0">
-      <p class="no-results">Busca sem resultados. Tente buscar outro termo</p>
-    </div>
+      <div v-else-if="products && products.length === 0" key="no-results">
+        <p class="no-results">Busca sem resultados. Tente buscar outro termo</p>
+      </div>
+      <PageLoading v-else key="loading" />
+    </transition>
   </section>
 </template>
 
@@ -36,7 +39,7 @@ export default {
   data() {
     return {
       products: null,
-      perPage: 2,
+      perPage: 9,
       count: 0,
     };
   },
@@ -55,10 +58,13 @@ export default {
 
   methods: {
     getProducts() {
-      api.get(this.url).then((response) => {
-        this.count = Number(response.headers["x-total-count"]);
-        this.products = response.data;
-      });
+      this.products = null;
+      setTimeout(() => {
+        api.get(this.url).then((response) => {
+          this.count = Number(response.headers["x-total-count"]);
+          this.products = response.data;
+        });
+      }, 1500);
     },
   },
 
