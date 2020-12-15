@@ -5,7 +5,7 @@
       "email": "vinicius@email.com",
       "name": "Vinicius Oliveira",
       "password": "123",
-      "address": "Rua Ali Perto",
+      "street": "Rua Ali Perto",
       "cep": "12345678",
       "number": "25",
       "state": "SP",
