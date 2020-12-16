@@ -15,7 +15,7 @@
     />
 
     <label for="cep">Cep</label>
-    <input type="text" id="cep" name="cep" v-model="cep" />
+    <input type="text" id="cep" name="cep" v-model="cep" @keyup="fillCep" />
 
     <label for="street">Rua</label>
     <input type="text" id="street" name="street" v-model="street" />
@@ -45,6 +45,7 @@
 
 <script>
 import { mapFields } from "./../helpers.js";
+import cepApi from "./../services/cepApi.js";
 
 export default {
   name: "UserForm",
@@ -65,6 +66,21 @@ export default {
       base: "user",
       mutation: "UPDATE_USER",
     }),
+  },
+
+  methods: {
+    fillCep() {
+      const cep = this.cep.replace(/\D/g, "");
+
+      if (cep.length === 8) {
+        cepApi.get(`/${cep}/json`).then(({ data }) => {
+          this.street = data.logradouro;
+          this.neighborhood = data.bairro;
+          this.state = data.uf;
+          this.city = data.localidade;
+        });
+      }
+    },
   },
 };
 </script>
