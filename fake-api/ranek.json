@@ -8,8 +8,9 @@
       "street": "Rua Ali Perto",
       "cep": "12345678",
       "number": "25",
-      "state": "SP",
-      "city": "São Bernardo do Campo"
+      "neighborhood": "Bairro dos bairros",
+      "city": "São Bernardo do Campo",
+      "state": "SP"
     }
   ],
   "product": [

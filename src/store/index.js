@@ -6,6 +6,7 @@ import api from './../services/api'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  strict: true,
   state: {
     logged: false,
     user: {
@@ -16,8 +17,9 @@ export default new Vuex.Store({
       cep: "",
       street: "",
       number: "",
-      state: "",
-      city: ""
+      neighborhood: "",
+      city: "",
+      state: ""
     }
   },
 
@@ -26,7 +28,7 @@ export default new Vuex.Store({
       state.logged = payload;
     },
     UPDATE_USER(state, payload) {
-      state.user = payload;
+      state.user = Object.assign(state.user, payload);
     }
   },
 
