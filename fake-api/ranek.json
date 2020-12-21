@@ -11,6 +11,18 @@
       "neighborhood": "Bairro dos bairros",
       "city": "São Bernardo do Campo",
       "state": "SP"
+    },
+    {
+      "id": "xuxa@email.com",
+      "name": "Xuxa",
+      "email": "xuxa@email.com",
+      "password": "123",
+      "cep": "01001-000",
+      "street": "Praça da Sé",
+      "number": "1",
+      "neighborhood": "Sé",
+      "city": "São Paulo",
+      "state": "SP"
     }
   ],
   "product": [
@@ -445,6 +457,30 @@
       "sold": "false",
       "description": "Esse é um novo tablet",
       "photos": null
+    },
+    {
+      "name": "Tablet novo!!",
+      "price": "500",
+      "description": "Esse é um tablet novo",
+      "photos": null,
+      "userId": "xuxa@email.com",
+      "id": "_1UF2fc"
+    },
+    {
+      "name": "Tablet 2",
+      "price": "5555",
+      "description": "tablet description",
+      "photos": null,
+      "userId": "xuxa@email.com",
+      "id": "OdSrdz6"
+    },
+    {
+      "name": "Celular",
+      "price": "1500",
+      "description": "celular novo",
+      "photos": null,
+      "userId": "xuxa@email.com",
+      "id": "R6Bmt1X"
     }
   ]
 }
