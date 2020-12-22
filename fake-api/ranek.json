@@ -2,14 +2,14 @@
   "user": [
     {
       "id": "vinicius@email.com",
-      "email": "vinicius@email.com",
       "name": "Vinicius Oliveira",
+      "email": "vinicius@email.com",
       "password": "123",
-      "street": "Rua Ali Perto",
-      "cep": "12345678",
+      "cep": "01018-000",
+      "street": "Praça Clóvis Beviláqua",
       "number": "25",
-      "neighborhood": "Bairro dos bairros",
-      "city": "São Bernardo do Campo",
+      "neighborhood": "Sé",
+      "city": "São Paulo",
       "state": "SP"
     },
     {
@@ -26,15 +26,6 @@
     }
   ],
   "product": [
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
     {
       "id": "smartphone",
       "name": "Smartphone",
