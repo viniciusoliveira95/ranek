@@ -38,6 +38,7 @@ export default {
         price: "",
         description: "",
         photos: null,
+        sold: "false",
       },
     };
   },

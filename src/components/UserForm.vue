@@ -1,18 +1,25 @@
 <template>
   <form>
-    <label for="name">Nome</label>
-    <input type="text" id="name" name="name" v-model="name" />
+    <div v-if="showLoginData" class="user">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" v-model="name" />
 
-    <label for="newUserEmail">Email</label>
-    <input type="email" id="newUserEmail" name="newUserEmail" v-model="email" />
+      <label for="newUserEmail">Email</label>
+      <input
+        type="email"
+        id="newUserEmail"
+        name="newUserEmail"
+        v-model="email"
+      />
 
-    <label for="newUserPassword">Senha</label>
-    <input
-      type="password"
-      id="newUserPassword"
-      name="newUserPassword"
-      v-model="password"
-    />
+      <label for="newUserPassword">Senha</label>
+      <input
+        type="password"
+        id="newUserPassword"
+        name="newUserPassword"
+        v-model="password"
+      />
+    </div>
 
     <label for="cep">Cep</label>
     <input type="text" id="cep" name="cep" v-model="cep" @keyup="fillCep" />
@@ -66,6 +73,9 @@ export default {
       base: "user",
       mutation: "UPDATE_USER",
     }),
+    showLoginData() {
+      return !this.$store.state.logged || this.$route.name === "user-edit";
+    },
   },
 
   methods: {
@@ -86,10 +96,15 @@ export default {
 </script>
 
 <style scoped>
-form {
+form,
+.user {
   display: grid;
   grid-template-columns: 80px 1fr;
   align-items: center;
+}
+
+.user {
+  grid-column: 1 / 3;
 }
 
 .button {

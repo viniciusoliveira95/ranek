@@ -1,4 +1,50 @@
 {
+  "transaction": [
+    {
+      "buyerId": "vinicius@email.com",
+      "sellerId": "vinicius@email.com",
+      "product": {
+        "id": "tablet",
+        "name": "Tablet",
+        "userId": "vinicius@email.com",
+        "price": "1399",
+        "sold": "false",
+        "description": "Esse é um novo tablet",
+        "photos": null
+      },
+      "address": {
+        "cep": "01018-000",
+        "street": "Praça Clóvis Beviláqua",
+        "number": "25",
+        "neighborhood": "Sé",
+        "city": "São Paulo",
+        "state": "SP"
+      },
+      "id": 1
+    },
+    {
+      "buyerId": "vinicius@email.com",
+      "sellerId": "vinicius@email.com",
+      "product": {
+        "id": "tablet",
+        "name": "Tablet",
+        "userId": "vinicius@email.com",
+        "price": "1399",
+        "sold": "false",
+        "description": "Esse é um novo tablet",
+        "photos": null
+      },
+      "address": {
+        "cep": "01018-000",
+        "street": "Praça Clóvis Beviláqua",
+        "number": "25",
+        "neighborhood": "Sé",
+        "city": "São Paulo",
+        "state": "SP"
+      },
+      "id": 2
+    }
+  ],
   "user": [
     {
       "id": "vinicius@email.com",
@@ -455,6 +501,7 @@
       "description": "Esse é um tablet novo",
       "photos": null,
       "userId": "xuxa@email.com",
+      "sold": "false",
       "id": "_1UF2fc"
     },
     {
@@ -463,6 +510,7 @@
       "description": "tablet description",
       "photos": null,
       "userId": "xuxa@email.com",
+      "sold": "false",
       "id": "OdSrdz6"
     },
     {
@@ -471,6 +519,7 @@
       "description": "celular novo",
       "photos": null,
       "userId": "xuxa@email.com",
+      "sold": "false",
       "id": "R6Bmt1X"
     }
   ]

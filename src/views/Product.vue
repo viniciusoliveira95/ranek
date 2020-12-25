@@ -10,7 +10,13 @@
         <h1>{{ product.name }}</h1>
         <p class="price">{{ product.price | numberToPrice }}</p>
         <p class="description">{{ product.description }}</p>
-        <button class="btn" v-if="product.sold === 'false'">Comprar</button>
+
+        <transition mode="out-in" v-if="product.sold === 'false'">
+          <button class="btn" v-if="!finish" @click="finish = true">
+            Comprar
+          </button>
+          <FinishPurchase v-else :product="product" />
+        </transition>
         <button class="btn" v-else disabled>Produto Vendido</button>
       </div>
     </div>
@@ -20,15 +26,20 @@
 
 <script>
 import api from "./../services/api";
+import FinishPurchase from "./../components/FinishPurchase";
 
 export default {
   name: "product",
   props: ["id"],
+  components: { FinishPurchase },
+
   data() {
     return {
       product: null,
+      finish: false,
     };
   },
+
   methods: {
     getProduct() {
       api
