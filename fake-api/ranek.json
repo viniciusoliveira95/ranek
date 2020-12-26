@@ -43,6 +43,28 @@
         "state": "SP"
       },
       "id": 2
+    },
+    {
+      "buyerId": "xuxa@email.com",
+      "sellerId": "vinicius@email.com",
+      "product": {
+        "id": "notebook",
+        "name": "Notebook",
+        "userId": "vinicius@email.com",
+        "price": "4999",
+        "sold": "false",
+        "description": "Esse é um novo notebook",
+        "photos": null
+      },
+      "address": {
+        "cep": "01001-000",
+        "street": "Praça da Sé",
+        "number": "1",
+        "neighborhood": "Sé",
+        "city": "São Paulo",
+        "state": "SP"
+      },
+      "id": 3
     }
   ],
   "user": [
