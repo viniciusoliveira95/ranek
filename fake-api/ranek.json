@@ -4,13 +4,18 @@
       "buyerId": "vinicius@email.com",
       "sellerId": "vinicius@email.com",
       "product": {
-        "id": "tablet",
-        "name": "Tablet",
+        "id": "smartphone",
+        "name": "Smartphone",
         "userId": "vinicius@email.com",
-        "price": "1399",
+        "price": "1999",
         "sold": "false",
-        "description": "Esse é um novo tablet",
-        "photos": null
+        "description": "Esse é um novo smartphone",
+        "photos": [
+          {
+            "src": "http://localhost:3000/smartphone.jpg",
+            "title": "smartphone"
+          }
+        ]
       },
       "address": {
         "cep": "01018-000",
@@ -21,50 +26,6 @@
         "state": "SP"
       },
       "id": 1
-    },
-    {
-      "buyerId": "vinicius@email.com",
-      "sellerId": "vinicius@email.com",
-      "product": {
-        "id": "tablet",
-        "name": "Tablet",
-        "userId": "vinicius@email.com",
-        "price": "1399",
-        "sold": "false",
-        "description": "Esse é um novo tablet",
-        "photos": null
-      },
-      "address": {
-        "cep": "01018-000",
-        "street": "Praça Clóvis Beviláqua",
-        "number": "25",
-        "neighborhood": "Sé",
-        "city": "São Paulo",
-        "state": "SP"
-      },
-      "id": 2
-    },
-    {
-      "buyerId": "xuxa@email.com",
-      "sellerId": "vinicius@email.com",
-      "product": {
-        "id": "notebook",
-        "name": "Notebook",
-        "userId": "vinicius@email.com",
-        "price": "4999",
-        "sold": "false",
-        "description": "Esse é um novo notebook",
-        "photos": null
-      },
-      "address": {
-        "cep": "01001-000",
-        "street": "Praça da Sé",
-        "number": "1",
-        "neighborhood": "Sé",
-        "city": "São Paulo",
-        "state": "SP"
-      },
-      "id": 3
     }
   ],
   "user": [
@@ -101,7 +62,12 @@
       "price": "1999",
       "sold": "false",
       "description": "Esse é um novo smartphone",
-      "photos": null
+      "photos": [
+        {
+          "src": "http://localhost:3000/smartphone.jpg",
+          "title": "smartphone"
+        }
+      ]
     },
     {
       "id": "tablet",
@@ -110,7 +76,12 @@
       "price": "1399",
       "sold": "false",
       "description": "Esse é um novo tablet",
-      "photos": null
+      "photos": [
+        {
+          "src": "http://localhost:3000/tablet.jpg",
+          "title": "tablet"
+        }
+      ]
     },
     {
       "id": "notebook",
@@ -119,7 +90,54 @@
       "price": "4999",
       "sold": "false",
       "description": "Esse é um novo notebook",
-      "photos": null
+      "photos": [
+        {
+          "src": "http://localhost:3000/notebook.jpg",
+          "title": "notebook"
+        }
+      ]
+    },
+    {
+      "id": "camera",
+      "name": "Camera",
+      "userId": "vinicius@email.com",
+      "price": "999",
+      "sold": "false",
+      "description": "Esse é um novo camera",
+      "photos": [
+        {
+          "src": "http://localhost:3000/camera.jpg",
+          "title": "camera"
+        }
+      ]
+    },
+    {
+      "id": "smartwatch",
+      "name": "Smartwatch",
+      "userId": "vinicius@email.com",
+      "price": "999",
+      "sold": "false",
+      "description": "Esse é um novo smartwatch",
+      "photos": [
+        {
+          "src": "http://localhost:3000/smartwatch.jpg",
+          "title": "smartwatch"
+        }
+      ]
+    },
+    {
+      "id": "speaker",
+      "name": "Speaker",
+      "userId": "vinicius@email.com",
+      "price": "999",
+      "sold": "false",
+      "description": "Esse é um novo speaker",
+      "photos": [
+        {
+          "src": "http://localhost:3000/speaker.jpg",
+          "title": "speaker"
+        }
+      ]
     },
     {
       "id": "smartphone",
@@ -128,7 +146,12 @@
       "price": "1999",
       "sold": "false",
       "description": "Esse é um novo smartphone",
-      "photos": null
+      "photos": [
+        {
+          "src": "http://localhost:3000/smartphone.jpg",
+          "title": "smartphone"
+        }
+      ]
     },
     {
       "id": "tablet",
@@ -137,7 +160,12 @@
       "price": "1399",
       "sold": "false",
       "description": "Esse é um novo tablet",
-      "photos": null
+      "photos": [
+        {
+          "src": "http://localhost:3000/tablet.jpg",
+          "title": "tablet"
+        }
+      ]
     },
     {
       "id": "notebook",
@@ -146,403 +174,54 @@
       "price": "4999",
       "sold": "false",
       "description": "Esse é um novo notebook",
-      "photos": null
+      "photos": [
+        {
+          "src": "http://localhost:3000/notebook.jpg",
+          "title": "notebook"
+        }
+      ]
     },
     {
-      "id": "smartphone",
-      "name": "Smartphone",
+      "id": "camera",
+      "name": "Camera",
       "userId": "vinicius@email.com",
-      "price": "1999",
+      "price": "999",
       "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
+      "description": "Esse é um novo camera",
+      "photos": [
+        {
+          "src": "http://localhost:3000/camera.jpg",
+          "title": "camera"
+        }
+      ]
     },
     {
-      "id": "tablet",
-      "name": "Tablet",
+      "id": "smartwatch",
+      "name": "Smartwatch",
       "userId": "vinicius@email.com",
-      "price": "1399",
+      "price": "999",
       "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
+      "description": "Esse é um novo smartwatch",
+      "photos": [
+        {
+          "src": "http://localhost:3000/smartwatch.jpg",
+          "title": "smartwatch"
+        }
+      ]
     },
     {
-      "id": "notebook",
-      "name": "Notebook",
+      "id": "speaker",
+      "name": "Speaker",
       "userId": "vinicius@email.com",
-      "price": "4999",
+      "price": "999",
       "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "id": "notebook",
-      "name": "Notebook",
-      "userId": "vinicius@email.com",
-      "price": "4999",
-      "sold": "false",
-      "description": "Esse é um novo notebook",
-      "photos": null
-    },
-    {
-      "id": "smartphone",
-      "name": "Smartphone",
-      "userId": "vinicius@email.com",
-      "price": "1999",
-      "sold": "false",
-      "description": "Esse é um novo smartphone",
-      "photos": null
-    },
-    {
-      "id": "tablet",
-      "name": "Tablet",
-      "userId": "vinicius@email.com",
-      "price": "1399",
-      "sold": "false",
-      "description": "Esse é um novo tablet",
-      "photos": null
-    },
-    {
-      "name": "Tablet novo!!",
-      "price": "500",
-      "description": "Esse é um tablet novo",
-      "photos": null,
-      "userId": "xuxa@email.com",
-      "sold": "false",
-      "id": "_1UF2fc"
-    },
-    {
-      "name": "Tablet 2",
-      "price": "5555",
-      "description": "tablet description",
-      "photos": null,
-      "userId": "xuxa@email.com",
-      "sold": "false",
-      "id": "OdSrdz6"
-    },
-    {
-      "name": "Celular",
-      "price": "1500",
-      "description": "celular novo",
-      "photos": null,
-      "userId": "xuxa@email.com",
-      "sold": "false",
-      "id": "R6Bmt1X"
+      "description": "Esse é um novo speaker",
+      "photos": [
+        {
+          "src": "http://localhost:3000/speaker.jpg",
+          "title": "speaker"
+        }
+      ]
     }
   ]
 }

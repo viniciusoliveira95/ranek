@@ -9,6 +9,16 @@ This project is from the Vuejs course from origamid and its purpose is only for 
 npm install
 ```
 
+### Install json-server globally
+```
+npm i -g json-server
+```
+
+### Run json-server fake bakend with fake static server
+```
+json-server --watch ./fake-api/ranek.json --static ./static
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
