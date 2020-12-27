@@ -46,7 +46,9 @@ export default {
 
       this.$store
         .dispatch("getUser", this.login.email)
-        .then(() => this.$router.push({ name: "user" }))
+        .then(() => {
+          this.$router.push({ name: "user" });
+        })
         .catch((error) => {
           this.errors.push(error.response.statusText);
         });

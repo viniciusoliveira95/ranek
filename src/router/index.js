@@ -8,6 +8,7 @@ import UserProducts from './../views/user/UserProducts.vue'
 import UserBuy from './../views/user/UserBuy.vue'
 import UserSales from './../views/user/UserSales.vue'
 import UserEdit from './../views/user/UserEdit.vue'
+import store from './../store'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,9 @@ const routes = [
     path: '/user',
     component: User,
     props: true,
+    meta: {
+      logged: true,
+    },
     children: [
       {
         path: '',
@@ -71,5 +75,17 @@ const router = new VueRouter({
     return window.scrollTo({ top: 0, behavior: "smooth" })
   }
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.logged)) {
+    if (!store.state.logged) {
+      next("/login");
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+});
 
 export default router
