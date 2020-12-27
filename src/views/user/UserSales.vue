@@ -87,4 +87,16 @@ h3 {
   grid-gap: 20px;
   margin-bottom: 60px;
 }
+
+@media screen and (max-width: 500px) {
+  .delivery {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  h3 {
+    margin: 0;
+    justify-self: start;
+  }
+}
 </style>

@@ -94,4 +94,18 @@ img {
   margin-top: 60px;
   width: 200px;
 }
+
+@media screen and (max-width: 500px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+
+  .photos {
+    grid-row: 2;
+  }
+
+  .info {
+    position: initial;
+  }
+}
 </style>
