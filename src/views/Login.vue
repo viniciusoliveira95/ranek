@@ -12,6 +12,7 @@
         v-model="login.password"
       />
       <button class="btn" @click.prevent="doLogin">Logar</button>
+      <ErrorNotification :errors="errors" />
     </form>
     <p class="lost_password">
       <a href="/" target="_blank">Perdeu a senha? Clique aqui</a>
@@ -35,13 +36,20 @@ export default {
         email: "",
         password: "",
       },
+      errors: [],
     };
   },
 
   methods: {
     doLogin() {
-      this.$store.dispatch("getUser", this.login.email);
-      this.$router.push({ name: "user" });
+      this.errors = [];
+
+      this.$store
+        .dispatch("getUser", this.login.email)
+        .then(() => this.$router.push({ name: "user" }))
+        .catch((error) => {
+          this.errors.push(error.response.statusText);
+        });
     },
   },
 };
