@@ -51,6 +51,8 @@ export default {
     if (this.logged) {
       this.getBuys();
     }
+
+    document.title = "Usuário | Compras";
   },
 };
 </script>

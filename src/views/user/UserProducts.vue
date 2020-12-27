@@ -55,6 +55,8 @@ export default {
     if (this.logged) {
       this.getUserProducts();
     }
+
+    document.title = "Usuário";
   },
 };
 </script>

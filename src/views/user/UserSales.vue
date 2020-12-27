@@ -59,6 +59,8 @@ export default {
     if (this.logged) {
       this.getSales();
     }
+
+    document.title = "Usuário | Vendas";
   },
 };
 </script>

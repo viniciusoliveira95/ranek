@@ -42,9 +42,10 @@ export default {
 
   methods: {
     getProduct() {
-      api
-        .get(`/product/${this.id}`)
-        .then((response) => (this.product = response.data));
+      api.get(`/product/${this.id}`).then((response) => {
+        this.product = response.data;
+        document.title = this.product.name;
+      });
     },
   },
 

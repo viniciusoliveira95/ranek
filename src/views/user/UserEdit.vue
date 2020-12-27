@@ -25,6 +25,10 @@ export default {
         .catch((error) => console.log(error));
     },
   },
+
+  created() {
+    document.title = "Usuário | Editar";
+  },
 };
 </script>
 
