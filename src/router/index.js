@@ -1,4 +1,5 @@
 import Vue from 'vue'
+
 import VueRouter from 'vue-router'
 import Home from './../views/Home.vue'
 import Product from './../views/Product.vue'
@@ -8,11 +9,17 @@ import UserProducts from './../views/user/UserProducts.vue'
 import UserBuy from './../views/user/UserBuy.vue'
 import UserSales from './../views/user/UserSales.vue'
 import UserEdit from './../views/user/UserEdit.vue'
+import NotFoundPage from './../views/NotFoundPage.vue'
+
 import store from './../store'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: "*",
+    component: NotFoundPage
+  },
   {
     path: '/',
     name: 'home',
